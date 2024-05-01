@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: montserrat;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.bar-switches {
+    position: absolute;
+    top: 574px;
+    left: 130px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.cupcake-button-active,
+.topping-button {
+    border: none; 
+    cursor: pointer;
+    font-family: montserrat;
+    font-size: 1.3em;
+    color: #ffff;
+    background-color: transparent;
+}
+
+.topping-button {
+    margin-left: 95px;
+}
+
+.cupcake-button-active {
+    margin-left: 34px;
+}
+
+.content-game {
+    position: relative;
+    padding: 50px;
+    width: 1300px;
+    height: 700px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffa293;
+    background-image: url(../images/background-bar.png);
+    background-size: 87%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-game background-img {
+    border-radius: 100px;
+}
+
+.content {
+    padding: 100px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffa293;
+}
+
+.logo {
+    width: 300px;
+}
+
+.logo-game {
+    width: 200px;
+    padding-top: 1000px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.start-button:hover {
+    background-color: #ffffff;
+    box-shadow: 5px 10px;
+    border-radius: 8px;
+}
+
+.cupcake {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    transform: translateX(-50%);
+    animation: flyUpRight 8s linear infinite;
+    width: 120px;
+}
+
+@keyframes flyUpRight {
+    0% {
+        bottom: -200px;
+        left: -200px;
+    }
+
+    100% {
+        bottom: 100%;
+        left: 100%;
+    }
+}
+
+.cupcakepositioned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 520px;
+}
+
+.caketoppings,
+.toppingbar {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    scrollbar-width: none;
+    padding-top: 30px;
+}
+
+.caketoppings {
+    width: 1200px;
+    padding-left: 50px;
+    justify-content: space-around;
+}
+
+.toppingbar {
+    width: 1150px;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+#toppingsBar {
+    display: none;
+} 
+
+.topping,
+.base {
+    padding: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.topping {
+    background-color: #ffff;
+    margin: 0 10px; 
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffff;
+}
+
+.base {
+    background-color: #482020;
+}
+
+.caketoppings::-webkit-scrollbar {
+    display: none;
+} 
+
+.selected-cupcake-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+} 
+
+.bar-switcher button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: montserrat;
+} 
+
+.bar-switcher button.active {
+    background-color: #000000;
+    color: white;
+} 
+  
+.base-vanille {
+    position: relative;
+    width: 430px;
+} 
+
+.done-button {
+    position: absolute;
+    bottom: 210px;
+    left: 612px;
+    z-index: 1;
+    width: 175px;
+}
+
+.done-button:hover {
+    box-shadow: 5px 5px;
+    border-radius: 8px;
+    color:#dd8c7f;
+}
+
+.cupcake-name {
+    color: #ffffff;
+    /* margin-top: 0.5px; */
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+    height: 15px;
+}
+
+.cijfer {
+    position: absolute;
+    display: none;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffa293;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    text-align: center;
+    z-index: 1;
+}
+
+.snoeplos {
+    position: absolute;
+    display: none;
+    left: 515px;
+    width: 400px;
+    bottom: 415px;
+}
+
+.bloemlos {
+    position: absolute;
+    display: none;
+    top: 70px;
+    left: 520px;
+    width: 380px
+}
+
+.hartjelos {
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 502px;
+    width: 400px
+}
+
+.kerslos {
+    position: absolute;
+    display: none;
+    top: 95px;
+    left: 502px;
+    width: 400px
+}
+
+.perziklos {
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 502px;
+    width: 400px
+}
+
+.aardbeilos {
+    position: absolute;
+    display: none;
+    top: 105px;
+    left: 502px;
+    width: 400px
+}
+
+.blauwebeslos {
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 502px;
+    width: 400px
+}
+
+.sprinkleslos {
+    position: absolute;
+    display: none;
+    top: 95px;
+    left: 502px;
+    width: 400px
+}
+
+.lollylos {
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 502px;
+    width: 400px
+}
+
+.frambooslos {
+    position: absolute;
+    display: none;
+    top: 110px;
+    left: 502px;
+    width: 400px
+}
+
+.starslos {
+    position: absolute;
+    display: none;
+    top: 105px;
+    left: 500px;
+    width: 400px
+}
+
+.marshmellowlos {
+    position: absolute;
+    display: none; 
+    top: 105px;
+    left: 490px;
+    width: 400px
+}
+
+.grapelos {
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 502px;
+    width: 400px
+}
+
+.lemonlos {
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 490px;
+    width: 425px
+}
+
+.pinkrockslos {
+    position: absolute;
+    display: none; 
+    top: 120px;
+    left: 530px;
+    width: 350px
+}
+
+.noteslos {
+    position: absolute;
+    display: none;
+    top: 130px;
+    left: 530px;
+    width: 350px
+}
+
+#togglebutton {
+    width: 75px;
+    position: absolute;
+    right: 210px;
+    top: 135px;
+}
+
+#togglebutton:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
