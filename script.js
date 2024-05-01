@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
 function showCupcakes() {
     cupcakeBar.style.display = "flex"; 
     toppingBar.style.display = "none";
-    contentGame.style.backgroundImage = 'url(../images/background-bar.png)'; 
+    contentGame.style.backgroundImage = 'url(images/background-bar.png)'; 
 }
 
 function showToppings() {
     cupcakeBar.style.display = "none"; 
     toppingBar.style.display = "flex";
-    contentGame.style.backgroundImage = 'url(../images/background-bar-2.png)'; 
+    contentGame.style.backgroundImage = 'url(images/background-bar-2.png)'; 
 }
 
 // De code voor het veranderen van de cupcake die in het mdiden staat.//
@@ -259,10 +259,10 @@ togglebutton.addEventListener("click", muziek)
 function muziek(){
      if (audio.paused) {
         audio.play();
-        togglebutton.src = "../images/music-button.png";
+        togglebutton.src = "images/music-button.png";
     } else {
         audio.pause();
-        togglebutton.src = "../images/music-button-off.png"
+        togglebutton.src = "images/music-button-off.png"
     }
 };
 
